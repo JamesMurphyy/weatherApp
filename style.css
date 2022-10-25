@@ -2,12 +2,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* align-content: center; */
+  align-content: center;
   height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-size: cover;
   font-size: 120%;
 }
 
@@ -49,7 +50,7 @@ input.search-bar {
   color: white;
   font-family: inherit;
   font-size: 105%;
-  width: calc(90% - 100px);
+  width: calc(99% - 105px);
 }
 
 button:hover {
