@@ -29,4 +29,21 @@ let weather = {
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + "')";
   },
+  search: function () {
+    this.fetchWeather(document.querySelector(".search-bar").value);
+  },
 };
+
+document.querySelector(".search button").addEventListener("click", function () {
+  weather.search();
+});
+
+document
+  .querySelector(".search-bar")
+  .addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
+      weather.search();
+    }
+  });
+
+weather.fetchWeather("Denver");
